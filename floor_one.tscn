@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://BasicFloorTile.gd" id="1_5u13h"]
 [ext_resource type="Texture2D" uid="uid://dnen61jifs4ym" path="res://art/Stone_Floor_002_COLOR.jpg" id="1_axbdt"]
 [ext_resource type="Texture2D" uid="uid://c0kfpe0ftw48u" path="res://art/Stone_Floor_002_SPEC.jpg" id="2_mapj6"]
-[ext_resource type="Texture2D" uid="uid://drmcmytdp17hp" path="res://art/Stone_Floor_002_NORM.jpg" id="3_vkttk"]
+[ext_resource type="Texture2D" uid="uid://cctrsxef4fnbb" path="res://art/Stone_Floor_002_NORM.jpg" id="3_vkttk"]
 [ext_resource type="Texture2D" uid="uid://b7n46gf0gxr36" path="res://art/Stone_Wall_014_basecolor.jpg" id="5_3krtu"]
 [ext_resource type="Texture2D" uid="uid://cstqmejmvjiq3" path="res://art/Stone_Wall_014_normal.jpg" id="6_xiu1b"]
 [ext_resource type="Texture2D" uid="uid://c2mhylxbwmqcl" path="res://art/Stone_Wall_014_roughness.jpg" id="7_ykhgu"]
@@ -45,7 +45,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicFloorTile2" type="MeshInstance3D" parent="."]
@@ -58,7 +57,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile2"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile2/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicFloorTile3" type="MeshInstance3D" parent="."]
@@ -71,7 +69,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile3"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile3/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicFloorTile4" type="MeshInstance3D" parent="."]
@@ -84,7 +81,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile4"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile4/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicFloorTile5" type="MeshInstance3D" parent="."]
@@ -97,7 +93,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile5"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile5/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicFloorTile6" type="MeshInstance3D" parent="."]
@@ -110,7 +105,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile6"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile6/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicFloorTile7" type="MeshInstance3D" parent="."]
@@ -123,7 +117,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile7"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile7/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicWallTile" type="MeshInstance3D" parent="."]
@@ -134,7 +127,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_78bek")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicWallTile"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicWallTile/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicWallTile3" type="MeshInstance3D" parent="."]
@@ -145,7 +137,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_78bek")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicWallTile3"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicWallTile3/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicWallTile2" type="MeshInstance3D" parent="."]
@@ -156,7 +147,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_78bek")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicWallTile2"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicWallTile2/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicWallTile4" type="MeshInstance3D" parent="."]
@@ -167,7 +157,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_78bek")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicWallTile4"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicWallTile4/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicWallTile5" type="MeshInstance3D" parent="."]
@@ -178,7 +167,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_78bek")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicWallTile5"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicWallTile5/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicWallTile10" type="MeshInstance3D" parent="."]
@@ -189,7 +177,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_78bek")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicWallTile10"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicWallTile10/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicWallTile6" type="MeshInstance3D" parent="."]
@@ -200,7 +187,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_78bek")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicWallTile6"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicWallTile6/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicWallTile7" type="MeshInstance3D" parent="."]
@@ -211,7 +197,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_78bek")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicWallTile7"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicWallTile7/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicWallTile8" type="MeshInstance3D" parent="."]
@@ -222,7 +207,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_78bek")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicWallTile8"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicWallTile8/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicWallTile9" type="MeshInstance3D" parent="."]
@@ -233,7 +217,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_78bek")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicWallTile9"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicWallTile9/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicFloorTile17" type="MeshInstance3D" parent="."]
@@ -246,7 +229,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile17"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile17/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicFloorTile18" type="MeshInstance3D" parent="."]
@@ -259,7 +241,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile18"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile18/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicFloorTile19" type="MeshInstance3D" parent="."]
@@ -272,7 +253,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile19"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile19/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicFloorTile20" type="MeshInstance3D" parent="."]
@@ -285,7 +265,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile20"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile20/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicFloorTile8" type="MeshInstance3D" parent="."]
@@ -298,7 +277,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile8"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile8/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicFloorTile9" type="MeshInstance3D" parent="."]
@@ -311,7 +289,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile9"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile9/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicFloorTile10" type="MeshInstance3D" parent="."]
@@ -324,7 +301,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile10"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile10/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicFloorTile11" type="MeshInstance3D" parent="."]
@@ -337,7 +313,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile11"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile11/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicFloorTile12" type="MeshInstance3D" parent="."]
@@ -350,7 +325,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile12"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile12/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicFloorTile13" type="MeshInstance3D" parent="."]
@@ -363,7 +337,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile13"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile13/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicFloorTile14" type="MeshInstance3D" parent="."]
@@ -376,7 +349,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile14"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile14/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicFloorTile15" type="MeshInstance3D" parent="."]
@@ -389,7 +361,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile15"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile15/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="BasicFloorTile16" type="MeshInstance3D" parent="."]
@@ -402,7 +373,6 @@ script = ExtResource("1_5u13h")
 [node name="StaticBody3D" type="StaticBody3D" parent="BasicFloorTile16"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BasicFloorTile16/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_6rfe5")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]

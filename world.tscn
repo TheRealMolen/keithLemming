@@ -1,8 +1,8 @@
 [gd_scene load_steps=12 format=3 uid="uid://basoep05l63x7"]
 
-[ext_resource type="PackedScene" uid="uid://dd5lqcpgiylah" path="res://floor_one.tscn" id="2_b5gi4"]
 [ext_resource type="Texture2D" uid="uid://boo4b80lqv7dv" path="res://art/dmscreen.png" id="2_hx0an"]
 [ext_resource type="Script" path="res://PlayerChr.gd" id="3_jpr3w"]
+[ext_resource type="PackedScene" uid="uid://bjrpspwhn0gcq" path="res://floor_twoo.tscn" id="3_t3ya6"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gamxd"]
 albedo_color = Color(0.803922, 0.513726, 0.32549, 1)
@@ -19,8 +19,11 @@ radial_segments = 24
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lto42"]
 
 [sub_resource type="Environment" id="Environment_3pnrr"]
-background_energy_multiplier = 0.15
-volumetric_fog_enabled = true
+background_energy_multiplier = 1.8
+ambient_light_source = 2
+ambient_light_color = Color(0.0901961, 0.207843, 0.239216, 1)
+ambient_light_energy = 0.42
+reflected_light_source = 1
 volumetric_fog_density = 0.0169
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o2b3l"]
@@ -40,8 +43,6 @@ transform = Transform3D(0.712926, -0.601938, -0.359733, 0.542838, 0.148982, 0.82
 light_color = Color(0.65098, 0.815686, 0.807843, 1)
 shadow_enabled = true
 
-[node name="Node3D" parent="." instance=ExtResource("2_b5gi4")]
-
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.8724, 1.49387, -1.89142)
 script = ExtResource("3_jpr3w")
@@ -53,7 +54,7 @@ mesh = SubResource("CapsuleMesh_6iedc")
 shape = SubResource("CapsuleShape3D_lto42")
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
-transform = Transform3D(0.707107, -0.374709, 0.599661, 0, 0.848048, 0.529919, -0.707107, -0.374709, 0.599661, 4.02102, 3.67208, 3.13391)
+transform = Transform3D(0.707107, -0.374709, 0.599661, 0, 0.848048, 0.529919, -0.707107, -0.374709, 0.599661, 7.43276, 6.68703, 6.54565)
 environment = SubResource("Environment_3pnrr")
 current = true
 fov = 60.0
@@ -64,3 +65,12 @@ transform = Transform3D(97.0917, 0, 0, 0, -0.162823, -41.8062, 0, 0.986628, -6.8
 material_override = SubResource("StandardMaterial3D_o2b3l")
 mesh = SubResource("PlaneMesh_b1hl8")
 surface_material_override/0 = SubResource("StandardMaterial3D_41ujj")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="CharacterBody3D"]
+transform = Transform3D(0.985232, 0.0221626, 0.169784, -0.171224, 0.127524, 0.976944, 7.42148e-09, -0.991588, 0.129436, 0.850734, 2.34505, 0.519529)
+light_color = Color(0.862745, 0.788235, 0.721569, 1)
+spot_range = 6.12567
+spot_angle = 43.5938
+
+[node name="Node3D" parent="." instance=ExtResource("3_t3ya6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.59757, 9.53674e-07, -0.511861)
